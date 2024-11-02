@@ -1,0 +1,49 @@
+﻿@model IEnumerable<FashionLike.Models.Posteo>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Lista de Posteos</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Posteo" asp-action="Crear" class="btn btn-secondary">Nuevo posteo</a>
+        </div>
+    </div>
+    <br />
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Fecha</th>
+                    <th>Descripcion</th>
+                    <th>Votos</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th>@item.Nombre</th>
+                        <th>@item.Fecha</th>
+                        <th>@item.Descripcion</th>
+                        <th>@item.Votos</th>
+                        <th></th>
+                    </tr>
+                }
+            </tbody>
+            
+        </table>
+    }
+    else
+    {
+        <p>No hay registros de posteos</p>
+    }
+</div>
+
