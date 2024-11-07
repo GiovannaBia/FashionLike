@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HtmlSanitizer" Version="8.1.870" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,6 +19,11 @@
   <ItemGroup>
     <ProjectReference Include="..\FashionLike_AccesoDatos\FashionLike_AccesoDatos.csproj" />
     <ProjectReference Include="..\FashionLike_Modelos\FashionLike_Modelos.csproj" />
+    <ProjectReference Include="..\FashionLike_Utilidades\FashionLike_Utilidades.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Imagenes\" />
   </ItemGroup>
 
 </Project>

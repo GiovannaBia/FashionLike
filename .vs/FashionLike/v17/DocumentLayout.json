@@ -7,16 +7,24 @@
       "RelativeMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|solutionrelative:fashionlike\\controllers\\posteocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|e:\\escritorio\\progamaci\u00F3n\\gio\\fashionlike\\fashionlike\\views\\posteo\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|solutionrelative:fashionlike\\views\\posteo\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|e:\\escritorio\\progamaci\u00F3n\\gio\\fashionlike\\fashionlike\\views\\posteo\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|solutionrelative:fashionlike\\views\\posteo\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|e:\\escritorio\\progamaci\u00F3n\\gio\\fashionlike\\fashionlike\\views\\posteo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|solutionrelative:fashionlike\\views\\posteo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{10967059-1AEB-44DE-91FE-A3C301097C5D}|FashionLike_Modelos\\FashionLike_Modelos.csproj|e:\\escritorio\\progamaci\u00F3n\\gio\\fashionlike\\fashionlike_modelos\\models\\posteo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{10967059-1AEB-44DE-91FE-A3C301097C5D}|FashionLike_Modelos\\FashionLike_Modelos.csproj|solutionrelative:fashionlike_modelos\\models\\posteo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|e:\\escritorio\\progamaci\u00F3n\\gio\\fashionlike\\fashionlike\\views\\posteo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|solutionrelative:fashionlike\\views\\posteo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{26CEE77B-C44C-400C-80B8-759EC1B15192}|FashionLike_Utilidades\\FashionLike_Utilidades.csproj|e:\\escritorio\\progamaci\u00F3n\\gio\\fashionlike\\fashionlike_utilidades\\wc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26CEE77B-C44C-400C-80B8-759EC1B15192}|FashionLike_Utilidades\\FashionLike_Utilidades.csproj|solutionrelative:fashionlike_utilidades\\wc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|e:\\escritorio\\progamaci\u00F3n\\gio\\fashionlike\\fashionlike\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF75C4AD-EA7C-4442-8D92-8AE0289D43A3}|FashionLike\\FashionLike.csproj|solutionrelative:fashionlike\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,28 +42,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Crear.cshtml",
-              "DocumentMoniker": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Views\\Posteo\\Crear.cshtml",
-              "RelativeDocumentMoniker": "FashionLike\\Views\\Posteo\\Crear.cshtml",
-              "ToolTip": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Views\\Posteo\\Crear.cshtml",
-              "RelativeToolTip": "FashionLike\\Views\\Posteo\\Crear.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T15:42:42.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Views\\Posteo\\Index.cshtml",
               "RelativeDocumentMoniker": "FashionLike\\Views\\Posteo\\Index.cshtml",
               "ToolTip": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Views\\Posteo\\Index.cshtml",
               "RelativeToolTip": "FashionLike\\Views\\Posteo\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwCgAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T15:16:28.282Z",
+              "WhenOpened": "2024-11-07T23:10:58.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WC.cs",
+              "DocumentMoniker": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike_Utilidades\\WC.cs",
+              "RelativeDocumentMoniker": "FashionLike_Utilidades\\WC.cs",
+              "ToolTip": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike_Utilidades\\WC.cs",
+              "RelativeToolTip": "FashionLike_Utilidades\\WC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:44:11.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FashionLike\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FashionLike\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T22:25:28.495Z",
               "EditorCaption": ""
             },
             {
@@ -66,22 +87,35 @@
               "RelativeDocumentMoniker": "FashionLike\\Controllers\\PosteoController.cs",
               "ToolTip": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Controllers\\PosteoController.cs",
               "RelativeToolTip": "FashionLike\\Controllers\\PosteoController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA2wCIAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAIwFIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T15:13:51.124Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Posteo.cs",
               "DocumentMoniker": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike_Modelos\\Models\\Posteo.cs",
               "RelativeDocumentMoniker": "FashionLike_Modelos\\Models\\Posteo.cs",
               "ToolTip": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike_Modelos\\Models\\Posteo.cs",
               "RelativeToolTip": "FashionLike_Modelos\\Models\\Posteo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA4wBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T15:05:27.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Upsert.cshtml",
+              "DocumentMoniker": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Views\\Posteo\\Upsert.cshtml",
+              "RelativeDocumentMoniker": "FashionLike\\Views\\Posteo\\Upsert.cshtml",
+              "ToolTip": "E:\\Escritorio\\progamaci\u00F3n\\gio\\FashionLike\\FashionLike\\Views\\Posteo\\Upsert.cshtml",
+              "RelativeToolTip": "FashionLike\\Views\\Posteo\\Upsert.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T21:41:04.173Z",
               "EditorCaption": ""
             }
           ]
