@@ -11,8 +11,10 @@ namespace FashionLike.Models
         [Required]
         public DateTime Fecha { get; set; }
         public string? Descripcion { get; set; }
-        public int Votos   { get; set; }
-       // [Required(ErrorMessage ="La imagen es obligatoria")]
+        public int VotosPositivos { get; set; }
+        public int VotosNegativos { get; set; }
+
+        // [Required(ErrorMessage ="La imagen es obligatoria")]
         public string? ImagenUrl { get; set; }
 
     }

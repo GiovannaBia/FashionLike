@@ -1,0 +1,64 @@
+﻿@model FashionLike.Models.Posteo
+
+@{
+    var titulo = "Eliminar posteo";
+}
+<form method="post" name="Upsert" enctype="multipart/form-data">
+
+    <input aspo-asp-for="Id" hidden />
+    <div class="border p-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <h2 class="text-info">@titulo</h2>          
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label asp-for="Nombre" class="form-label">Título</label>
+                            <input asp-for="Nombre" class="form-control" disabled/>
+                        </div>
+                    </div>
+          
+                    <div class="row" hidden>
+                        <label asp-for="ImagenUrl" class="form-label">Imagen</label>
+                        <input asp-for="ImagenUrl" class="form-control" />
+                    </div>
+                    <br />
+                    <div class="d-grid gap-2 d-md-block">
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                        <a asp-controller="Posteo" asp-action="Index" class="btn btn-success">Regresar</a>
+                    </div>
+                </div>
+            </div>
+            @if (@Model.Id != 0)
+            {
+                <div class="col-4">
+                    <img src="@FashionLike_Utilidades.WC.ImagenRuta@Model.ImagenUrl" width="100%" style="border-radius:5px; border:1px solid #1111" />
+                </div>
+            }
+        </div>
+    </div>
+
+</form>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial.cshtml" />
+    }
+    <script>
+        $(document).ready(function () {
+            $('.summernote').summernote({
+                length: 200
+            });
+        });
+
+        function validarImagen() {
+            if (document.getElementById("imagenId").value == "") {
+                swal("Error", "Seleccione una imagen!", "error");
+                return false;
+            }
+            return true;
+        }
+    </script>
+}

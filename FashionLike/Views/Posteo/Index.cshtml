@@ -24,7 +24,8 @@
                     <th>Nombre</th>
                     <th>Fecha</th>
                     <th>Descripcion</th>
-                    <th>Votos</th>
+                    <th>Votos Positivos</th>
+                    <th>Votos Negativos</th>
                     <th></th>
                 </tr>
             </thead>
@@ -34,8 +35,9 @@
                     <tr>
                         <th>@item.Nombre</th>
                         <th>@item.Fecha</th>
-                        <th>@Html.Raw(item.Descripcion)</th>
-                        <th>@item.Votos</th>
+                        <th>@item.Descripcion</th>
+                        <th>@item.VotosPositivos</th>
+                        <th>@item.VotosNegativos</th>
                         <th class="text-center">
                             <div class="w-74 btn-group " role="group">
                                 <a asp-controller="Posteo" asp-action="Upsert" asp-route-Id="@item.Id" class="btn btn-primary mx-2"><i class="fas fa-edit"></i></a>

@@ -113,5 +113,33 @@ namespace FashionLike.Controllers
             }
                    
         }
+        //get
+        public IActionResult Eliminar(int? Id)
+        {
+            if (Id == null || Id == 0)
+                return NotFound();
+            Posteo posteo = _db.Posteos.FirstOrDefault(p=> p.Id == Id); 
+            
+            if(posteo == null)
+                return NotFound();
+
+            return View(posteo);
+            
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Eliminar (Posteo posteo)
+        {
+            if (posteo == null)
+                return NotFound();
+            string upload = _webHostEnvironment.WebRootPath + WC.ImagenRuta;
+            var anteriorFile = Path.Combine(upload, posteo.ImagenUrl);
+            if(System.IO.File.Exists(anteriorFile))
+                System.IO.File.Delete(anteriorFile);
+            _db.Posteos.Remove(posteo);
+            _db.SaveChanges();  
+            return RedirectToAction("Index");   
+        }
     }
 }

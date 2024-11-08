@@ -1,8 +1,48 @@
-﻿@{
+﻿@model FashionLike_Modelos.Models.ViewModels.PosteoHomeVM
+@{
     ViewData["Title"] = "Home Page";
+    int currentIndex = (int)ViewData["CurrentIndex"];
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @if (Model.Posteos.Count > 0)
+    {
+        var posteo = Model.Posteos[currentIndex];
+        <div class="text-center row" style="height:500px; width:800px">
+        <div class="container col-6" >
+                
+                
+                <img src="@($"{FashionLike_Utilidades.WC.ImagenRuta}{posteo.ImagenUrl}")" alt="@posteo.Nombre" style="height: 100%; width: 100%; object-fit: contain; " />
+                
+            </div>
+            <div class=" col-6 align-content-center">
+                <div style="margin-bottom:10px">
+                    <h2>@posteo.Nombre</h2>
+                    <p class="mt-4">@posteo.Descripcion</p>
+                    <div class="w-74 btn-group " role="group">
+                        <a asp-controller="Home" asp-action="VotarGusta" asp-route-Id="@posteo.Id" class="btn btn-danger mx-2" style="border-radius:30%;"><i class="fas fa-heart"></i></a>
+                    </div>
+                    <div class="w-74 btn-group " role="group">
+                        <a asp-controller="Home" asp-action="VotarNoGusta" asp-route-Id="@posteo.Id" class="btn btn-secondary" style="border-radius:30%; "><i class="fa fa-thumbs-down"></i></a>
+                    </div>
+                </div>
+                
+                <br />
+                <div class="navigation-buttons mt-4">
+                    <a href="@Url.Action("Index", "Home", new { id = currentIndex - 1 })" class="btn btn-primary" @(currentIndex == 0 ? "disabled" : "")>Anterior</a>
+                    <a href="@Url.Action("Index", "Home", new { id = currentIndex + 1 })" class="btn btn-primary" @(currentIndex == Model.Posteos.Count - 1 ? "disabled" : "")>Siguiente</a>
+                </div>
+               
+                
+            </div>
+        </div>
+       
+        
+
+        
+    }
+    else
+    {
+        <p>No hay posteos disponibles.</p>
+    }
 </div>
