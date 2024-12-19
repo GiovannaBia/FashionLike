@@ -10,5 +10,6 @@ namespace FashionLike_Modelos.Models.ViewModels
     public class PosteoHomeVM
     {
         public List<Posteo> Posteos { get; set; }
+        public UsuarioAplicacion UsuarioAplicacion { get; set; }
     }
 }

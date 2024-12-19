@@ -1,4 +1,5 @@
-﻿@model FashionLike_Modelos.Models.ViewModels.PosteoHomeVM
+﻿@using FashionLike_Utilidades
+@model FashionLike_Modelos.Models.ViewModels.PosteoHomeVM
 @{
     ViewData["Title"] = "Home Page";
     int currentIndex = (int)ViewData["CurrentIndex"];
@@ -20,17 +21,18 @@
                     <h2>@posteo.Nombre</h2>
                     <p class="mt-4">@posteo.Descripcion</p>
                     <div class="w-74 btn-group " role="group">
-                        <a asp-controller="Home" asp-action="VotarGusta" asp-route-Id="@posteo.Id" class="btn btn-danger mx-2" style="border-radius:30%;"><i class="fas fa-heart"></i></a>
+                        <a href="@Url.Action("VotarGusta", new { Id = posteo.Id, currentIndex = ViewData["CurrentIndex"] })" class="btn btn-success"><i class="fas fa-heart"></i></a>
+
                     </div>
                     <div class="w-74 btn-group " role="group">
-                        <a asp-controller="Home" asp-action="VotarNoGusta" asp-route-Id="@posteo.Id" class="btn btn-secondary" style="border-radius:30%; "><i class="fa fa-thumbs-down"></i></a>
+                        <a href="@Url.Action("VotarNoGusta", new { Id = posteo.Id, currentIndex = ViewData["CurrentIndex"] })" class="btn btn-success"><i class="fa fa-thumbs-down"></i></a>
                     </div>
                 </div>
                 
                 <br />
                 <div class="navigation-buttons mt-4">
-                    <a href="@Url.Action("Index", "Home", new { id = currentIndex - 1 })" class="btn btn-primary" @(currentIndex == 0 ? "disabled" : "")>Anterior</a>
-                    <a href="@Url.Action("Index", "Home", new { id = currentIndex + 1 })" class="btn btn-primary" @(currentIndex == Model.Posteos.Count - 1 ? "disabled" : "")>Siguiente</a>
+                    <a href="@Url.Action("Index", "Home", new { currentIndex = currentIndex - 1 })" class="btn btn-primary" @(currentIndex == 0 ? "hidden" : "")>Anterior</a>
+                    <a href="@Url.Action("Index", "Home", new { currentIndex = currentIndex + 1 })" class="btn btn-primary" @(currentIndex == Model.Posteos.Count - 1 ? "hidden" : "")>Siguiente</a>
                 </div>
                
                 
@@ -46,3 +48,13 @@
         <p>No hay posteos disponibles.</p>
     }
 </div>
+<script>
+    $(document).ready(function () {
+        if (@TempData[FashionLike_Utilidades.WC.Exitoso] != null) {
+            toastr.success("@TempData[WC.Exitoso]");
+        }
+        if (@TempData[FashionLike_Utilidades.WC.Error] != null) {
+            toastr.error("@TempData[WC.Error]");
+        }
+    });
+</script>

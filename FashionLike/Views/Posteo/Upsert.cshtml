@@ -3,7 +3,7 @@
 @{
     var titulo = "Crer nuevo posteo";
 }
-<form method="post" name="Upsert" enctype="multipart/form-data">
+<form method="post" asp-action="Upsert" enctype="multipart/form-data">
     @if (Model.Id != 0)
     {
         titulo = "Editar posteo";
@@ -35,7 +35,6 @@
                         <div class="col-md-6">
                             <label asp-for="ImagenUrl" class="form-label">Imagen</label>
                             <input type="file" name="files" id="imagenId" class="form-control" />
-                            <span asp-validation-for="ImagenUrl" class="text-danger"></span>
                         </div>
                     </div>
                     <br />
@@ -52,7 +51,8 @@
                     </div>
                 </div>
             </div>
-            @if(@Model.Id != 0) {
+            @if(@Model.Id != 0) 
+            {
                 <div class="col-4">
                     <img src="@FashionLike_Utilidades.WC.ImagenRuta@Model.ImagenUrl" width="100%" style="border-radius:5px; border:1px solid #1111" />
                 </div>
